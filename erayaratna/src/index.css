@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gendy:wght@400;500;600&display=swap");
+
+@import "tailwindcss";
+
+.gendy {
+  font-family: "Gendy", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XOPQ" 96, "XTRA" 468,
+    "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.tiptap {
+  min-height: 250px;
+  height: 100%;
+}
+
+.ProseMirror {
+  min-height: inherit;
+  height: inherit;
+  outline: none;
+}
+
+.ProseMirror p.is-empty::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #aaa;
+  pointer-events: none;
+  height: 0;
+}
+
+.tiptap table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tiptap th,
+.tiptap td {
+  border: 1px solid #f472b6;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.tiptap .resizable-image {
+  position: relative;
+  display: inline-block;
+}
+
+.tiptap .resizable-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.tiptap .resizer {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #f472b6;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50%;
+  cursor: nwse-resize;
+  z-index: 100;
+}
